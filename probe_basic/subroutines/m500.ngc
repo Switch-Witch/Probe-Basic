@@ -1,0 +1,26 @@
+o<m500> sub
+;Subroutine to stop a spindle and pause for a certain time.
+;For spindles without feedback.
+;The pause time will only be use if the spindle was on.
+;Stand: 2023-12-30
+
+#<spindle_on> = #<_spindle_on>
+
+M5
+M172 ;turn off air-seal
+;(debug, Spindle: #<spindle_on>)
+o<100> if [#<spindle_on> EQ 1]
+;    (msg, Spindle is ON)
+    G4 P8.0
+o<100> endif
+;(msg, Spindel AUS)
+
+;M66 P10 L3 Q10
+;O200 IF [#5399 EQ -1]
+;	(abort, Spindle did not stop in time!)
+;O200 ENDIF
+
+
+o<m500> endsub
+
+M2 (end program)
