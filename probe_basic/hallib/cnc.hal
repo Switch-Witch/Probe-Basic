@@ -65,10 +65,10 @@ net tls-clean-out   motion.digital-out-04   => lcec.0.2088modul1.dout-5
 net probe-in     <=  lcec.0.1088modul1.din-4
 
 # --- TLS-Normal-IN ---
-net tls-in       <=  lcec.0.1008modul1.din-0-not
+net tls-in       <=  lcec.0.1008modul1.din-6-not
 
 # --- TLS-Overtravel-IN ---
-net tls-over-in  <=  lcec.0.1008modul1.din-1
+net tls-over-in  <=  lcec.0.1008modul1.din-7
 
 loadrt or2 names=or.probeortls
 addf or.probeortls servo-thread

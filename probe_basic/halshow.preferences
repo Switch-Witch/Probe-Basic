@@ -5,46 +5,16 @@ placeFrames 0.438953488372093
 set ::ratio 0.438953488372093
 set ::old_w_leftf 160
 set ::watchlist {
-    pin+lcec.0.A6X.actual-position
-    pin+lcec.0.A6X.actual-torque
-    pin+lcec.0.A6X.actual-velocity
-    pin+lcec.0.A6X.control-mode
-    pin+lcec.0.A6X.target-position
-    pin+lcec.0.A6X.target-velocity
-    sig+a-drv-act-pos
-    pin+lcec.0.A6A.actual-position
-    pin+lcec.0.A6A.actual-torque
-    pin+lcec.0.A6A.actual-velocity
-    pin+lcec.0.A6A.control-mode
-    pin+lcec.0.A6A.control-word
-    pin+lcec.0.A6A.target-velocity
-    sig+max-home-z
-    pin+lcec.0.2088modul1.dout-0
-    pin+lcec.0.2088modul1.dout-1
-    pin+lcec.0.2088modul1.dout-2
-    pin+lcec.0.2088modul1.dout-3
-    pin+lcec.0.2088modul1.dout-4
-    pin+lcec.0.2088modul1.dout-5
-    pin+lcec.0.2088modul1.dout-6
-    pin+lcec.0.2088modul1.dout-7
-    sig+min-home-x
-    sig+min-home-y
-    pin+lcec.0.1008modul1.din-0
-    pin+lcec.0.1088modul1.din-2
-    pin+lcec.0.1088modul1.din-3
-    pin+lcec.0.1088modul1.din-1
-    pin+lcec.0.1088modul1.din-4
-    pin+lcec.0.1088modul1.din-5
-    pin+lcec.0.1088modul1.din-6
-    pin+lcec.0.1088modul1.din-7
-    pin+vfdmod.rs485.is-connected
-    pin+lcec.0.1008modul1.din-6-not
-    pin+lcec.0.1008modul1.din-7-not
-    sig+tls-in
     sig+tls-over-in
-    sig+toolclamp-in
-    sig+toolrelease-in
+    sig+estop-out
+    sig+estopgui_in
+    pin+lcec.0.A6Z.control-mode
+    pin+estop.and
+    pin+estop.in-00
+    pin+estop.in-01
+    sig+tls-in
     sig+probe-in
+    sig+probe-tool
 }
 set ::workmode watchhal
 set ::watchInterval 100
