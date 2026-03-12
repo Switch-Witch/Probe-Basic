@@ -120,7 +120,8 @@ net estop-out     =>  iocontrol.0.emc-enable-in
 
 # Set CIA402 into Profile Position Mode
 setp cia402.0.csp-mode 1
-setp cia402.0.pos-scale 26214.4
+setp cia402.0.pos-scale [JOINT_0]SCALE
+
 
 # Motion signal mappings for axis X
 net x-pos-cmd		joint.0.motor-pos-cmd		=> cia402.0.pos-cmd
@@ -152,7 +153,7 @@ net x-pos-limit     =>  joint.0.pos-lim-sw-in
 
 # Set CIA402 into Profile Position Mode
 setp cia402.1.csp-mode 1
-setp cia402.1.pos-scale 26214.4
+setp cia402.1.pos-scale [JOINT_1]SCALE
 
 # Motion signal mappings for axis Z
 net y-pos-cmd		joint.1.motor-pos-cmd		=> cia402.1.pos-cmd
@@ -184,7 +185,7 @@ net y-pos-limit     =>  joint.1.pos-lim-sw-in
 
 # Set CIA402 into Profile Position Mode
 setp cia402.2.csp-mode 1
-setp cia402.2.pos-scale 26214.4
+setp cia402.2.pos-scale [JOINT_2]SCALE
 
 # Motion signal mappings for axis Z
 net Z-pos-cmd		joint.2.motor-pos-cmd		=> cia402.2.pos-cmd
@@ -216,7 +217,7 @@ net z-neg-limit     =>  joint.2.neg-lim-sw-in
 
 # Set CIA402 into Profile Position Mode
 setp cia402.3.csp-mode 1
-setp cia402.3.pos-scale 26214.4
+setp cia402.3.pos-scale [JOINT_3]SCALE
 
 # Motion signal mappings for axis A
 net a-pos-cmd		joint.3.motor-pos-cmd		=> cia402.3.pos-cmd
